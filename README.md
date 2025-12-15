@@ -22,19 +22,21 @@ A comprehensive trading strategy application with both historical analysis and r
 
 ## Requirements
 
-- Python 3.7+
-- Streamlit
+- Python 3.12+ (required for Streamlit Cloud compatibility)
+- Streamlit (latest version)
 - yfinance
 - pandas
 - numpy
 - plotly
-- TA-Lib
+- TA-Lib (pre-installed on Streamlit Cloud)
 
 ## Installation
 
+### For Local Development
+
 ```bash
 # Install Python dependencies
-pip install streamlit yfinance pandas numpy plotly TA-Lib
+pip install -r requirements.txt
 
 # For TA-Lib installation on macOS
 brew install ta-lib
@@ -43,6 +45,16 @@ brew install ta-lib
 sudo apt-get install build-essential
 pip install TA-Lib
 ```
+
+### For Streamlit Cloud
+
+Streamlit Cloud uses Python 3.13 and has TA-Lib pre-installed. The requirements.txt file uses latest versions of all packages which are compatible with Python 3.13+.
+
+**Important**: If you encounter deployment issues:
+1. Ensure you've pushed the latest requirements.txt to GitHub
+2. Try restarting your app in Streamlit Cloud
+3. Clear the app cache if needed
+4. Check the deployment logs for specific error messages
 
 ## Running the Application
 

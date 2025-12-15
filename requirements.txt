@@ -1,10 +1,10 @@
-# Trading Bot Requirements
+# Trading Bot Requirements - Python 3.12+ compatible
 # Install with: pip install -r requirements.txt
 
-streamlit==1.28.0
-pandas==2.0.3
-numpy==1.24.3
-yfinance==0.2.31
-plotly==5.18.0
-TA-Lib==0.4.27
-requests==2.31.0
+streamlit
+pandas
+numpy
+yfinance
+plotly
+TA-Lib
+requests

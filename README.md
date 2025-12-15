@@ -46,10 +46,37 @@ pip install TA-Lib
 
 ## Running the Application
 
+### Local Development
+
 ```bash
+# Install dependencies
+pip install -r requirements.txt
+
 # Start the Streamlit application
 streamlit run bot.py
 ```
+
+### Streamlit Cloud Deployment
+
+1. **Create a GitHub repository** with all the files (`bot.py`, `README.md`, `requirements.txt`)
+2. **Go to Streamlit Cloud** (https://share.streamlit.io/)
+3. **Click "New app"** and connect to your GitHub repository
+4. **Configure the app**:
+   - Repository: Your GitHub repo
+   - Branch: main/master
+   - Main file path: `bot.py`
+   - Python version: 3.9 or 3.10 (recommended)
+5. **Click "Deploy"**
+
+### Common Streamlit Cloud Issues
+
+**ModuleNotFoundError**: Ensure your `requirements.txt` file is complete and in the root directory
+
+**TA-Lib installation**: Streamlit Cloud has TA-Lib pre-installed, but if you have issues:
+- Use the exact versions in `requirements.txt`
+- Try Python 3.9 instead of newer versions
+
+**App not updating**: Clear cache and restart the app in Streamlit Cloud settings
 
 ## Usage Instructions
 
